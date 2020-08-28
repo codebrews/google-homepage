@@ -1,0 +1,213 @@
+body{
+    font-family: arial,sans-serif;
+}
+.header{
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 75px 30px;
+    grid-template-areas: "about store . gmail images app-link sign-in-button .";
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: small;
+    color: #222
+}
+.about{
+    grid-area: about;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store{
+    grid-area: store;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gmail{
+    grid-area: gmail;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images{
+    grid-area: images;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-link{
+    grid-area: app-link;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-button{
+    grid-area: sign-in-button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header a{
+        color: #222; 
+        text-decoration: none;
+}
+a:hover{
+        opacity: .85;
+        text-decoration: underline;
+}
+.apps{
+    height: 28px;
+    width: 28px;
+    position: relative;
+    opacity: .6 !important;
+}
+.apps:hover{
+    opacity: 1 !important;
+}
+.sign-in{
+    background-color: #4285f4;
+    color: white !important;
+    border-color: #4285f4;
+    font-weight: bold;
+    text-decoration: none  !important;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    width: 70px;
+    border-radius: 2px;
+}
+.sign-in:hover{
+    opacity: 1 !important;
+    box-shadow: 0px 1px 1px #c5c5c5;
+}
+.main{
+    display: grid;
+    padding-top: 90px;
+    row-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 50px 45px;
+    grid-template-areas: 
+        "logo logo"
+        "search-bar search-bar"
+        "search-button lucky-button";
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+}
+.google-logo{
+    height: 92px;
+    width: 272px;
+    align-items: center;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: search-bar;
+}
+input {
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    width: 550px;    
+}
+input:hover{
+    box-shadow: 1px 1px 10px -5px rgb(156, 156, 156);
+}
+.mag-glass{
+    height: 25px;
+    position: relative; left: 440px;
+}
+.mic{
+    display: flex;
+    height: 28px;
+    position: relative; left: -443px;
+}
+.search-button{
+    justify-content: right;
+    position: relative; left: 570px;
+    grid-area: search-button;
+}
+.lucky-button{
+    position: relative; left: -5px;
+    grid-area: lucky-button;
+}
+.button{
+    border: none;
+    border-radius: 4px;
+    line-height: 35px;
+    padding: 0 16px;
+    color: #5F6368;
+    font-size: 14px;
+    margin: 0 auto;
+}
+button:hover{
+    border: 1px solid rgb(199, 199, 199);
+    margin: -1px;
+    box-shadow: 0px 1px 5px -3px rgb(56, 56, 56);
+    cursor: pointer;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 10px auto auto auto 1fr auto auto auto 10px;
+    grid-template-areas: ". advertising business how . privacy terms settings .";
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    column-gap: 25px;
+    background-color: rgb(242, 242, 242);
+    font-size: 14px;
+}
+.footer a{
+    color: #5f6368;
+    text-decoration: none;
+}
+.footer a:hover{
+    opacity: 1 !important;
+    text-decoration: underline;
+}
+.advertising{
+    grid-area: advertising;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.business{
+    grid-area: business;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.how{
+    grid-area: how;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.privacy{
+    grid-area: privacy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.terms{
+    grid-area: terms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.settings{
+    grid-area: settings;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
