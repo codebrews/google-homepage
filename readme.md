@@ -14,6 +14,6 @@ The icons and buttons in and around the search bar went completely out of place 
 
 I got the positioning of elements very close on my screen size. I also achieved some good looking color styles and hover attributes for buttons and links. I tried to copy sizes, colors and subtle changes seen on the google website and got pretty close with all the details. 
 
-#### What I did differently
+#### My slightly different approach
 
 The assignment suggested using `<ul>` tags for the header and footer. I didn’t like how they positioned so I tried using grids to arrange everything. I also thought I was doing something wrong when the right justified links appeared in reverse order so grid design just seemed to give me more control. In hindsight flex box would have been even better but the recommended approach would have been the easiest.
